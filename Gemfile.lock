@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/windy/lina.git
-  revision: 2cf8016507e922728c661c4ef945afcf4db93a28
+  remote: https://github.com/windy/lina
+  revision: 84e26f9d65dce52ebba838f7b2a12405c8d569ed
   specs:
     lina (0.0.2)
       angularjs-rails

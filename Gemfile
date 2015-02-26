@@ -18,4 +18,4 @@ gem 'spring',        group: :development
 gem 'unicorn'
 gem 'figaro'
 
-gem 'lina', github: 'windy/lina'
+gem 'lina', git: 'https://github.com/windy/lina'
