@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  namespace :api do
+    resources :posts, only: [:index, :show]
+  end
   api_for '/apidoc'
 
   root 'home#index'

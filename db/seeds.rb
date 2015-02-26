@@ -1,7 +1,31 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Post.create!(
+  name: '第一篇文章',
+  content: <<-EOF
+伴随着窗外声声炮竹声, 中国农历新年马上就到了.
+
+心中却觉得离小时候的年味越来越远了.
+
+越来越多的朋友开始尝试用红包, 用微信, 用短信给朋友圈里拜年了.
+
+我今年却不知道怎么跟他们打招呼, 怎么拜年.
+
+干脆, 我便不再主动拜年了.
+
+我觉得, 我真正在乎的是真正用心生活的你们.
+
+于是, 我决定, 利用今年仅剩的几个小时, 让 WBlog 本身的数据为用心阅读的你拜一个有新意的年.
+EOF
+)
+
+Post.create!(
+  name: '第二篇文章',
+  content: <<-EOF
+在大学的时候, 我脑海里时常都蹦出对计算机的许多问号, 尤其是计算机是如何工作的, 为什么它如此强大, 越来越显著地改变了我们的生活.
+
+随着知识的积累, OS, 进程, 线程, 计算机网络, web 开发, 一个个知识孤岛在某一天终于连接了起来, 形成了一个极为清晰的信息流.
+
+我相信, 作为读者的你, 也会非常想弄明白其中原理, 或者已经弄明白但可能还有些一些疑问, 于是乎, 我将一个很常见的操作, 进行信息流分析, 尝试分层分析它们的每一步.
+
+这个操作就是: 当你正在浏览我的这篇博客时, 计算机到底做了什么?
+EOF
+)
