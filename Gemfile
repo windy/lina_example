@@ -17,4 +17,4 @@ gem 'spring',        group: :development
 
 gem 'unicorn'
 
-gem 'lina', path: '../lina'
+gem 'lina', github: 'windy/lina'

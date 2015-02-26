@@ -1,5 +1,6 @@
-PATH
-  remote: ../lina
+GIT
+  remote: git://github.com/windy/lina.git
+  revision: 2cf8016507e922728c661c4ef945afcf4db93a28
   specs:
     lina (0.0.2)
       angularjs-rails
