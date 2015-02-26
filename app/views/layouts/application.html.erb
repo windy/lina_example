@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LinaExample</title>
+  <title>Lina | A Restful API provider based on Ruby on Rails</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<nav id='lina-navbar' class="navbar navbar-default">
+  <div class="brand-header">
+    <a class="navbar-brand" href="/">
+      <%= image_tag 'logo.png' %>
+    </a>
+  </div>
+</nav>
 <%= yield %>
 
 </body>

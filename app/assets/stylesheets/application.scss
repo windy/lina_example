@@ -1,0 +1,18 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#lina-navbar {
+  .brand-header {
+    text-align: center;
+  }
+  .navbar-brand {
+    float: none;
+    padding: 0;
+    height: 60px;
+
+    img {
+      height: 60px;
+      display: inline;
+    }
+  }
+}
