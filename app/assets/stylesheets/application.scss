@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'home';
 
 #lina-navbar {
   .brand-header {
@@ -15,4 +16,12 @@
       display: inline;
     }
   }
+}
+
+body {
+  background: image-url('background.jpeg');
+  color: #666;
+  font-family: 'lucida grande', sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.6;
 }

@@ -1,0 +1,31 @@
+.home-page {
+
+  .panel {
+    position: relative;
+    background: #fcfcfc;
+    padding: 10px 20px;
+
+    .brand {
+      color: #333;
+      font-weight: 200;
+    }
+
+    .sub-brand {
+      font-size: 22px;
+      color: #666;
+    }
+
+  }
+
+  a.github {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.3;
+    transition: opacity 200ms linear;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
