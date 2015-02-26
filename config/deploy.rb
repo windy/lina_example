@@ -81,3 +81,8 @@ namespace :unicorn do
     invoke 'unicorn:start'
   end
 end
+
+desc "Shows logs."
+task :logs do
+  queue %[cd #{deploy_to!}/current && tail -f log/production.log]
+end
