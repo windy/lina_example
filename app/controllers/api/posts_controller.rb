@@ -38,7 +38,7 @@ class Api::PostsController < Lina::ApplicationController
 
   # def show
   define_action :show, {
-    name: 'show',
+    name: '获取某一篇文章的内容',
     description: '',
     params: {
       type: 'object',

@@ -1,9 +1,12 @@
 .home-page {
 
+  font-size: 16px;
+
   .panel {
     position: relative;
     background: #fcfcfc;
     padding: 10px 20px;
+    border: none;
 
     .brand {
       color: #333;
@@ -13,6 +16,22 @@
     .sub-brand {
       font-size: 22px;
       color: #666;
+    }
+
+    .img-inline {
+      width: 100%;
+      border: 1px solid #eee;
+    }
+
+    hr {
+      margin: 50px 0;
+    }
+
+    h2 {
+    }
+
+    p {
+      margin-bottom: 30px;
     }
 
   }

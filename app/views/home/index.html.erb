@@ -7,29 +7,141 @@
   	  Rails 开发者零学习成本的 Restful API 框架.
   	</p>
 
-    <ul>
-    	<li>自动生成文档</li>
-    	<li>零学习成本, 集成 Rails API 开发最佳实践</li>
-    	<li>自动校验参数, 快速构建安全可靠的 API</li>
-    </ul>
+    <p>
+    	<ul>
+    		<li>自动生成文档</li>
+    		<li>零学习成本, 集成 Rails 的 API 开发最佳实践</li>
+    		<li>自动校验参数, 快速构建安全可靠的 API</li>
+    	</ul>
+    </p>
+    <p>
+      一个完整的例子: <a href='https://github.com/windy/lina_example'>lina_example</a>
+    </p>
     <a class="github" href="https://github.com/windy/lina">
       <%= image_tag 'forkme.png' %>
     </a>
-  </div>
-  <div class="panel">
-    <h1 class="brand">
-      APIDOC 例子
-    </h1>
-    <p>
-    Rails 开发者零学习成本的 Restful API 框架.
-    </p>
-  </div>
+    <hr>
 
-  <div class="panel">
-    <h1 class="brand">
-      安装
-    </h1>
-    <p>
-    </p>
-  </div>
-</div>
+    <div class="row section">
+    	<div class="col-md-4">
+        <p>
+        	Lina 可以自动生成 APIDOC , 并实时更新, 你再也不需要单独为前端工程师撰写文档了.
+        </p>
+        <p>
+        	而且, 在下一版本这些信息还可以用于构建前端表单, 我正在努力实现中.
+        </p>
+    		<p>
+    			点击这里查看<a href='/apidoc'>示例</a>
+    		</p>
+    	</div>
+    	<div class="col-md-8">
+    		<%= image_tag 'lina_apidoc.png', class: 'img-inline' %>
+    	</div>
+    </div>
+    <hr>
+
+    <div class="row section">
+    	<div class="col-md-4">
+        <p>
+        	<h2> 简单, 安全, 高效率开发 </h2>
+        </p>
+        <p>
+        	<a href='http://json-schema.org/'>JSON Schema</a> 是描述 JSON 格式约束的标准, Lina 集成了 JSON Schema, 自动校验参数, 加上 Rails 强大的生态系统, 既可以构建安全的 API, 又非常的简单, 优雅.
+        </p>
+        <p>
+        	Lina 还提供了与 Rails 类似的生成器, 最终获得几乎与 Rails 一致的开发体验.
+        </p>
+        <pre>$ rails g lina:api posts index show</pre>
+    	</div>
+    	<div class="col-md-8">
+    		<%= image_tag 'apicode.png', class: 'img-inline' %>
+    	</div>
+    </div>
+    <hr>
+
+    <div class="row section">
+      <div class="col-md-5">
+      	<p> <h2>开发 API 最佳实践</h2> </p>
+      	<p>
+      		<ul>
+      	    <li>
+      	      <p>
+      	      	<strong>自动生成APIDOC.</strong>
+      	        维护 APIDOC 是前后端分离后必然要做好的事, Lina 通过巧妙的设计, 自动管理 APIDOC, 并且在后续版本可以持续改进 APIDOC, 将为你节省极大的时间.
+      	      </p>
+      	    </li>
+      	    <li>
+      	    <p>
+      	      <strong>参数声明.</strong>
+      	      通过 JSON Schema 参数声明, 参数约束与限制一目了然, 基本告别了在控制器里写大量参数检查的混乱代码.
+      	    </p>
+      	    </li>
+      	    <li>
+      	    <p><strong>
+      	    	JSON 生成
+      	      </strong>
+      	      jbuilder 已经足够好, 我们拿来即用. 更进一步的是, Lina 会将缺省的请求格式设置为 json, 更方便测试与调试. 当然, Rails 原本的控制器并不受任何影响.
+      	    </p>
+      	    </li>
+      	    <li>
+      	      <p><strong>
+      	      	路由与版本.
+      	        </strong>
+      	        Rails 原生的路由已经非常好, 我们依然直接使用, 并且将最佳实践列在 Lina 的 README 中: <a href='https://github.com/windy/lina'>Lina Router</a>
+      	      </p>
+      	    </li>
+      	    <li>
+      	      <p><strong>
+      	      	权限与认证
+      	        </strong>
+      	        无论直接使用 <code>before_action</code> 还是使用 <code>cancancan</code>, Lina 都与 Rails 一致, 在开发 Lina 时, 已经尽了最大的努力减少对 Rails 特性的影响, 很高兴的是, 这一目标已经达到.
+      	      </p>
+      	      <p>
+      	        在认证方面, Lina 强烈推荐使用 <code>JWT</code>, 更加适合于 JSON API 场景.
+      	      </p>
+      	    </li>
+      	    <li>
+      	      <p><strong>
+      	        CORS 跨域.
+      	      </strong> 请直接集成 <code>rack-cors</code></p>
+      	    </li>
+      	    <li>
+      	    <p><strong>
+      	    	API 测试.
+      	    </strong> 强烈建议将 API 测试做到 100% 覆盖, Lina 在这方面做的非常好, 默认情况下会自动帮你生成相关的测试代码.
+      	    </p>
+      	    </li>
+      		</ul>
+      	</p>
+      </div><!-- col-md -->
+      <div class="col-md-7">
+        <%= image_tag 'logo@2x.png' %>
+        <p style='text-align: center'><a href="http://badge.fury.io/rb/lina"><img alt="Gem Version" src="https://badge.fury.io/rb/lina.svg" style="max-width:100%;"></a>
+        <a href="/windy/lina/blob/master/MIT-LICENSE"><img alt="license" src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" style="max-width:100%;"></a>
+        <a href="https://travis-ci.org/windy/lina"><img alt="Build Status" src="https://travis-ci.org/windy/lina.png?branch=master" style="max-width:100%;"></a>
+        <a href="https://gemnasium.com/windy/lina"><img alt="Dependency Status" src="https://gemnasium.com/windy/lina.svg" style="max-width:100%;"></a></p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="section">
+      <p>
+        <h2>下一步计划( v0.2.x )</h2>
+      </p>
+      <p>
+      <ul>
+      	<li>
+      		<p><strong>Schema Form.</strong> 这个功能将是另一个特别酷的特性, 将参数声明信息反馈给前端, 将使得前端可以做出类似于 Simple Form 的组件, 并且体验更好.</p>
+      	</li>
+      	<li>
+      		<p><strong>ActiveRecord Validator Helper.</strong>整合 Rails ActiveRecord 的校验器, 将会使 Lina 更好用.</p>
+      	</li>
+      	<li>
+        <p><strong>I18N Support.</strong> APIDOC 需要 I18N 改进, 还有这份文档.</p>
+      	</li>
+      </ul>
+      </p>
+    </div>
+
+  </div><!-- .panel -->
+</div><!-- .container -->
