@@ -11,7 +11,7 @@ set :app_path, "#{deploy_to}/#{current_path}"
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['log', 'tmp' ]
+set :shared_paths, ['config/application.yml', 'log', 'tmp' ]
 
 set :user, 'ruby'    # Username in the server to SSH to.
 
