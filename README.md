@@ -1,5 +1,9 @@
-# A Lina Example Project
+# Lina Example & Document
 
-This is a lina example project, lina is a Restful API provider based on Ruby on Rails.
+Yeah!
 
-see more: https://github.com/windy/lina
+The site of http://linarb.org
+
+This is a lina example & document project, lina is a Restful API provider based on Ruby on Rails.
+
+about lina see more: https://github.com/windy/lina
