@@ -34,6 +34,18 @@
       margin-bottom: 30px;
     }
 
+    .img-list {
+      text-align: center;
+      margin-top: 30px;
+
+      @media (max-width: $screen-xs-max) {
+        a {
+          display: block;
+        }
+        margin-bottom: 0;
+      }
+    }
+
   }
 
   a.github {
