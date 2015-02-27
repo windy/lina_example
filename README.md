@@ -4,6 +4,6 @@ Yeah!
 
 The site of http://linarb.org
 
-This is a lina example & document project, lina is a Restful API provider based on Ruby on Rails.
+This is a lina example & document project, lina is a RESTful API provider based on Ruby on Rails.
 
 about lina see more: https://github.com/windy/lina
