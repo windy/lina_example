@@ -7,6 +7,7 @@ class Api::PostsController < Lina::ApplicationController
       properties: {
         created_order_by: {
           enum: [ :asc, :desc ],
+          default: 'desc',
           description: '按创建时间正序或倒序排'
         }
       }
@@ -33,7 +34,7 @@ class Api::PostsController < Lina::ApplicationController
       }
     }
   } do
-    @posts = Post.all
+    @posts = Post.order(created_at: params[:created_order_by].to_sym)
   end
 
   # def show
