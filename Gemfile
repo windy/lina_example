@@ -19,3 +19,4 @@ gem 'unicorn'
 gem 'figaro'
 
 gem 'lina', git: 'https://github.com/windy/lina'
+gem 'byebug', group: :development
