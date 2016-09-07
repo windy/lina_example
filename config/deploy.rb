@@ -16,8 +16,7 @@ set :shared_paths, ['config/application.yml', 'log', 'tmp' ]
 set :user, 'ruby'    # Username in the server to SSH to.
 
 task :environment do
-  queue! %[source /usr/local/rvm/scripts/rvm]
-  queue! %[rvm use 2.0.0]
+  invoke :'rvm:use[2.0.0]'
 end
 
 task :setup => :environment do
